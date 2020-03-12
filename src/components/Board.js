@@ -37,7 +37,13 @@ function Board(props) {
                 
             }
         }
+
         fetchData();
+        
+        const interval = setInterval(() => {
+            fetchData();
+          }, 60000);
+          return () => clearInterval(interval);
 
     }, [props.station]);
 

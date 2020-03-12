@@ -51,16 +51,21 @@ function DepartureEntry(props : any) {
         
             finalDestination = destinationData.data.data.attributes.headsign;
         
+            // If a Franklin or Foxboro Line train is routed over the Fairmount Line rather than the Northeast Corridor,
+            // display 'via Fairmount' following the destination name.
             if(finalDestination === "Forge Park/495" || finalDestination === "Foxboro") {
                 if(departureData.relationships.route.data.id === "CR-Fairmount") {
                     finalDestination = `${finalDestination} via Fairmount`;
                 }
+            // If a Haverhill Line train is routed over the Wildcat Branch rather than the Reading Line, it will display
+            // via Wildcat / via Lowell (final text has not been decided upon)
             } else if (finalDestination === "Haverhill") {
                 if(departureData.relationships.route.data.id === "CR-Lowell") {
-                    finalDestination = `${finalDestination} via Wildcat`;
+                    finalDestination = `${finalDestination} via Anderson RTC`;
                 }
             }
 
+            // Insert a space surrounding any '/' characters (so that Middleborough/Lakeville displays as Middleborough / Lakeville, for example)
             finalDestination = finalDestination.replace(/\//g," / ");
         
             setDestination(finalDestination);
