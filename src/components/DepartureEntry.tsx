@@ -52,13 +52,17 @@ function DepartureEntry(props : any) {
             finalDestination = destinationData.data.data.attributes.headsign;
         
             // If a Franklin or Foxboro Line train is routed over the Fairmount Line rather than the Northeast Corridor,
-            // display 'via Fairmount' following the destination name.
+            // display 'via Fairmount' following the destination name. (Fairmount is the final stop on the line before
+            // trains join the Franklin Line at Readville)
             if(finalDestination === "Forge Park/495" || finalDestination === "Foxboro") {
                 if(departureData.relationships.route.data.id === "CR-Fairmount") {
                     finalDestination = `${finalDestination} via Fairmount`;
                 }
-            // If a Haverhill Line train is routed over the Wildcat Branch rather than the Reading Line, it will display
-            // via Wildcat / via Lowell (final text has not been decided upon)
+            // If a Haverhill Line train is routed over the Wildcat Branch rather than the Reading routing, it will display
+            // 'via Anderson RTC' or 'via North Wilmington' following the destination name. (Anderson RTC is a major stop on the
+            // Lowell Line and the Amtrak Downeaster, while North Wilmington is the final stop Haverhill-line trains use before
+            // entering the Wildcat Branch use to reach the proper Haverhill Line at Ballardvale. Final text has not been decided
+            // upon.)
             } else if (finalDestination === "Haverhill") {
                 if(departureData.relationships.route.data.id === "CR-Lowell") {
                     finalDestination = `${finalDestination} via Anderson RTC`;
