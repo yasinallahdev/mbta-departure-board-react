@@ -61,7 +61,7 @@ function DepartureEntry(props : any) {
             // If a Haverhill Line train is routed over the Wildcat Branch rather than the Reading routing, it will display
             // 'via Anderson RTC' or 'via North Wilmington' following the destination name. (Anderson RTC is a major stop on the
             // Lowell Line and the Amtrak Downeaster, while North Wilmington is the final stop Haverhill-line trains use before
-            // entering the Wildcat Branch use to reach the proper Haverhill Line at Ballardvale. Final text has not been decided
+            // entering the Wildcat Branch to reach the proper Haverhill Line at Ballardvale. Final text has not been decided
             // upon.)
             } else if (finalDestination === "Haverhill") {
                 if(departureData.relationships.route.data.id === "CR-Lowell") {
