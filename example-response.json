@@ -1,0 +1,442 @@
+{
+    "data": [
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": "2020-05-06T19:55:00-04:00",
+                "direction_id": 0,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 1
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1411C0-North Station-1",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Fitchburg",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1411C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": {
+                        "id": "1803",
+                        "type": "vehicle"
+                    }
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 0,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 1
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1209C0-North Station-1",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Haverhill",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1209C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": null
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 1,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 14
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1208C0-North Station-14",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Haverhill",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1208C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": null
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 1,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 8
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1314C0-North Station-8",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Lowell",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1314C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": null
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 0,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 1
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1313C0-North Station-1",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Lowell",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1313C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": null
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 1,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 12
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1160C0-North Station-12",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Newburyport",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1160C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": null
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 0,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 1
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1111C0-North Station-1",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Newburyport",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1111C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": null
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 1,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 13
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1110C0-North Station-13",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Newburyport",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1110C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": null
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 0,
+                "schedule_relationship": null,
+                "status": "Departed",
+                "stop_sequence": 1
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1159C0-North Station-04-1",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Newburyport",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station-04",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1159C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": {
+                        "id": "1639",
+                        "type": "vehicle"
+                    }
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": null,
+                "departure_time": null,
+                "direction_id": 0,
+                "schedule_relationship": null,
+                "status": "Departed",
+                "stop_sequence": 1
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1109C0-North Station-04-1",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Newburyport",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station-04",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1109C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": {
+                        "id": "1644",
+                        "type": "vehicle"
+                    }
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": "2020-05-06T19:38:19-04:00",
+                "departure_time": null,
+                "direction_id": 1,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 17
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1410C0-North Station-17",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Fitchburg",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1410C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": {
+                        "id": "1646",
+                        "type": "vehicle"
+                    }
+                }
+            },
+            "type": "prediction"
+        },
+        {
+            "attributes": {
+                "arrival_time": "2020-05-06T19:44:50-04:00",
+                "departure_time": null,
+                "direction_id": 1,
+                "schedule_relationship": null,
+                "status": "On time",
+                "stop_sequence": 8
+            },
+            "id": "prediction-CR-Weekday-StormB-19-1312C0-North Station-8",
+            "relationships": {
+                "route": {
+                    "data": {
+                        "id": "CR-Lowell",
+                        "type": "route"
+                    }
+                },
+                "stop": {
+                    "data": {
+                        "id": "North Station",
+                        "type": "stop"
+                    }
+                },
+                "trip": {
+                    "data": {
+                        "id": "CR-Weekday-StormB-19-1312C0",
+                        "type": "trip"
+                    }
+                },
+                "vehicle": {
+                    "data": {
+                        "id": "1631",
+                        "type": "vehicle"
+                    }
+                }
+            },
+            "type": "prediction"
+        }
+    ],
+    "jsonapi": {
+        "version": "1.0"
+    }
+}

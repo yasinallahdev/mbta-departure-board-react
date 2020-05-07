@@ -12,7 +12,6 @@ const SStationQuery = "stop=place-sstat&route=CR-Greenbush,CR-Middleborough,CR-K
 
 const StationBoard = styled.section`
     border: 2px solid white;
-    width: 40%;
 `;
 
 function Board(props) {

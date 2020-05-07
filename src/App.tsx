@@ -12,6 +12,7 @@ const CenteredSection = styled.section`
   display: flex;
   justify-content: center;
   font-weight: bold;
+  font-size: 1.5rem;
 `;
 
 const YellowCenteredSection = styled.section`
@@ -19,11 +20,13 @@ const YellowCenteredSection = styled.section`
   font-weight: bold;
   display: flex;
   justify-content: center;
+  font-size: 1.5rem;
 `;
 
 const BoardContainer = styled.section`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-direction: column;
 `;
 
 function App() {
