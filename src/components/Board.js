@@ -69,7 +69,7 @@ function Board(props) {
                             const trackDepartureNumber = (stationData.length > 1)?(parseFloat(stationData[1])):("TBD");
                             const trainStatus = elem.attributes.status;
                             return (
-                                <DepartureEntry trainTime={trainDepartTime} destinationData={elem} trainNumber={trainVehicleNumber} trackNumber={trackDepartureNumber} status={trainStatus} />
+                                <DepartureEntry key={elem.id} trainTime={trainDepartTime} destinationData={elem} trainNumber={trainVehicleNumber} trackNumber={trackDepartureNumber} status={trainStatus} />
                             );
                         })
                     }
