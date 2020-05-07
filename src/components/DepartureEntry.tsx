@@ -27,8 +27,9 @@ function displayTime(time : Date) {
 }
 
 function parseTrainNumber(vehicleData : any) {
+    console.log(vehicleData);
     if(vehicleData) {
-        const vehicleID = parseFloat(vehicleData.id);
+        const vehicleID = parseFloat(vehicleData);
         if(!isNaN(vehicleID)) {
             return vehicleID;
         }

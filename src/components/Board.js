@@ -65,7 +65,7 @@ function Board(props) {
                         data.map((elem) => {
                             const stationData = elem.relationships.stop.data.id.split('-');
                             const trainDepartTime = elem.attributes.departure_time;
-                            const trainVehicleNumber = elem.relationships.vehicle.data;
+                            const trainVehicleNumber = elem.relationships.trip.data.id.split('-')[4];
                             const trackDepartureNumber = (stationData.length > 1)?(parseFloat(stationData[1])):("TBD");
                             const trainStatus = elem.attributes.status;
                             return (
