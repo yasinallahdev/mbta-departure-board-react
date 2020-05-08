@@ -68,7 +68,9 @@ function DepartureEntry(props : any) {
                     finalDestination = `${finalDestination} via Anderson RTC`;
                 }
             } else if (finalDestination === "Kingston") {
-                 // Future Proofing in case the Providence/Stoughton Line is extended to Kingston Railroad Station
+                 // Future Proofing in case the Providence/Stoughton Line is extended to Kingston Railroad Station in Rhode Island,
+                 // as has been proposed in the past: (https://web.archive.org/web/20100110211552/http://www.pbn.com/detail/47003.html)
+                 // (Note that this source is from 2009 and this may not happen in the near term, but just in case, here we are.)
                 if(departureData.relationships.route.data.id === "CR-Kingston") {
                     finalDestination = "Kingston, MA";
                 } else {
