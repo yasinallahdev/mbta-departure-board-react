@@ -60,13 +60,19 @@ function DepartureEntry(props : any) {
                     finalDestination = `${finalDestination} via Fairmount`;
                 }
             // If a Haverhill Line train is routed over the Wildcat Branch rather than the Reading routing, it will display
-            // 'via Anderson RTC' or 'via North Wilmington' following the destination name. (Anderson RTC is a major stop on the
-            // Lowell Line and the Amtrak Downeaster, while North Wilmington is the final stop Haverhill-line trains use before
-            // entering the Wildcat Branch to reach the proper Haverhill Line at Ballardvale. Final text has not been decided
-            // upon.)
+            // 'via Anderson RTC' or 'via Wildcat Branch' following the destination name. (Anderson RTC is a major stop on the
+            // Lowell Line and the Amtrak Downeaster, while the Wildcat Branch is a branch line connecting the Lowell Line's
+            // Wilmington station to the Haverhill Line's Ballardvale station. The Final text has not been decided upon.
             } else if (finalDestination === "Haverhill") {
                 if(departureData.relationships.route.data.id === "CR-Lowell") {
                     finalDestination = `${finalDestination} via Anderson RTC`;
+                }
+            } else if (finalDestination === "Kingston") {
+                 // Future Proofing in case the Providence/Stoughton Line is extended to Kingston Railroad Station
+                if(departureData.relationships.route.data.id === "CR-Kingston") {
+                    finalDestination = "Kingston, MA";
+                } else {
+                    finalDestination = "Kingston, RI";
                 }
             }
 
