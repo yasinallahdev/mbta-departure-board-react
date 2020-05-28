@@ -19,20 +19,25 @@ function Board(props) {
 
     const [data, setData] = useState({ data: []});
 
+    // this function will be periodically called to grab MBTA data for our board
     useEffect(() => {
         async function fetchData() {
 
+            // Get prediction data for either North Station or South Station, not including subway trips.
             const result = await axios.get(`https://api-v3.mbta.com/predictions/?api_key=${apiKey}&${(props.station === "North Station")?(NStationQuery):(SStationQuery)}`);
 
             if(result) {
+
+                // filter out all predictions that do not include a valid departure time (this clears out arrivals)
                 const filteredResult = result.data.data.filter((elem) => {
                     return (elem.relationships.stop.data.id.includes(props.station)) && (elem.attributes.departure_time !== null ? true : false);
                 })
 
+                // sort predictions to appear in order of departure time
                 const sortedResult = filteredResult.sort((a, b) => {
                     return new Date(a.attributes.departure_time).getTime() - new Date(b.attributes.departure_time).getTime();
                 });
-                //console.log(sortedResult);
+                
                 setData(sortedResult);
                 
             }
@@ -40,6 +45,7 @@ function Board(props) {
 
         fetchData();
         
+        // refresh the boards every 60 seconds
         const interval = setInterval(() => {
             fetchData();
           }, 60000);
@@ -47,6 +53,7 @@ function Board(props) {
 
     }, [props.station]);
 
+    // if we have valid data, render it to the board
     if(data && data.length) {
         console.log(data);
         return (
@@ -77,6 +84,7 @@ function Board(props) {
             </StationBoard>
         );
     } else {
+        // if not, render an empty board
         return (
             <StationBoard>
                 <CenteredHeading>
